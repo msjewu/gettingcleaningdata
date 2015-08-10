@@ -20,6 +20,7 @@ These signals were used to estimate variables of the feature vector for each pat
 Each row in the data identifies the unique combination of subject and activity performed. The first two columns of the data set are:
 
  [1] "subject" – The ID of the test subject. This ranges from 1 to 30
+
  [2] "activity" – type of activity performed by the subject. There are six activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
 
 The following are the remaining columns of the data set. “mean” denotes the mean of the measurement and “std” denotes the standard deviation. The actual value we list is the mean of the column heading, for that particular subject and activity.  For example, column 3 is the mean of the mean of the time-Body-Acceleration value in the X-axis.  Column 4 is the mean of the standard deviation of the time-Body-Acceleration value in the X-axis.
