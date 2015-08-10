@@ -18,6 +18,7 @@ These signals were used to estimate variables of the feature vector for each pat
 ##Data Set
 
 Each row in the data identifies the unique combination of subject and activity performed. The first two columns of the data set are:
+
  [1] "subject" – The ID of the test subject. This ranges from 1 to 30
  [2] "activity" – type of activity performed by the subject. There are six activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
 
