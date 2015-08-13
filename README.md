@@ -22,7 +22,7 @@ The R script then does the following:
   - This is done using rbind and cbind.
 
 2. Extracts only the measurements on the mean and standard deviation for each measurement.  
-  - We use only those measurements that include mean() and std() at the end. Exclude MeanFreq() measurements because these are weighted averages, not true means. Exclude the angle() measurements because they not actual means, but angles between two vectors.
+  - We use only those measurements that include mean() and std() at the end. Exclude meanFreq() measurements because these are weighted averages, not true means. Exclude the angle() measurements because they not actual means, but angles between two vectors.
 
 3. Uses descriptive activity names to name the activities in the data set.  
   - Change the activity labels from numeric to character form, using named activities such as "Walking," "Sitting," "Standing," etc.
