@@ -26,4 +26,5 @@ The R script then does the following:
 6. The output is called "tidy_data_set.txt"
 
 Please refer to "Codebook.md" for a description of the variables.
+
 Please refer to "run_analysis.R" for further comments on the script.
