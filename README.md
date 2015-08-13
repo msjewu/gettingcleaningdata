@@ -27,4 +27,4 @@ The R script then does the following:
 
 Please refer to "Codebook.md" for a description of the variables.
 
-Please refer to "run_analysis.R" for further comments on the script.
+Please refer to "run_analysis.R" for further comments on specific script commands.
