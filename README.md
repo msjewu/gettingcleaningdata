@@ -18,13 +18,22 @@ The files used in our analysis are listed as follows:
 
 The R script then does the following:
 
-1. Merges the training and the test sets to create one data set.
-2. Extracts only the measurements on the mean and standard deviation for each measurement.
-3. Uses descriptive activity names to name the activities in the data set.
-4. Appropriately labels the data set with descriptive variable names.
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-6. The output is called "tidy_data_set.txt"
+1. Merges the training and the test sets to create one data set.  
+  - This is done using rbind and cbind.
 
-Please refer to "Codebook.md" for a description of the variables.
+2. Extracts only the measurements on the mean and standard deviation for each measurement.  
+  - We use only those measurements that include mean() and std() at the end. Exclude MeanFreq() measurements because these are weighted averages, not true means. Exclude the angle() measurements because they not actual means, but angles between two vectors.
 
-Please refer to "run_analysis.R" for further comments on specific script commands.
+3. Uses descriptive activity names to name the activities in the data set.  
+  - Change the activity labels from numeric to character form, using named activities such as "Walking," "Sitting," "Standing," etc.
+
+4. Appropriately labels the data set with descriptive variable names.  
+  - Replace abbreviations with the full word.
+
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.  
+  - Use dplyr to group and summarize the data.  
+  - The output is called "tidy_data_set.txt"
+
+Please refer to "Codebook.md" for a description of the variables.  
+
+Please refer to "run_analysis.R" for further comments on specific script commands.  
